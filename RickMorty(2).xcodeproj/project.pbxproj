@@ -14,6 +14,7 @@
 		3A676B9B2ADEFF3A006138FB /* RickMorty_2_.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A676B992ADEFF3A006138FB /* RickMorty_2_.xcdatamodeld */; };
 		3A676B9D2ADEFF3C006138FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A676B9C2ADEFF3C006138FB /* Assets.xcassets */; };
 		3A676BA02ADEFF3C006138FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A676B9E2ADEFF3C006138FB /* LaunchScreen.storyboard */; };
+		3A676BAC2ADEFFAB006138FB /* RickMorty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A676BAB2ADEFFAB006138FB /* RickMorty.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3A676B9C2ADEFF3C006138FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A676B9F2ADEFF3C006138FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A676BA12ADEFF3C006138FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A676BAB2ADEFFAB006138FB /* RickMorty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickMorty.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +60,49 @@
 		3A676B8F2ADEFF3A006138FB /* RickMorty(2) */ = {
 			isa = PBXGroup;
 			children = (
-				3A676B902ADEFF3A006138FB /* AppDelegate.swift */,
-				3A676B922ADEFF3A006138FB /* SceneDelegate.swift */,
-				3A676B942ADEFF3A006138FB /* ViewController.swift */,
-				3A676B962ADEFF3A006138FB /* Main.storyboard */,
+				3A676BAA2ADEFF98006138FB /* Model */,
+				3A676BA72ADEFF4B006138FB /* Supports */,
+				3A676BA92ADEFF72006138FB /* Controllers */,
+				3A676BA82ADEFF59006138FB /* Storyboards */,
 				3A676B9C2ADEFF3C006138FB /* Assets.xcassets */,
-				3A676B9E2ADEFF3C006138FB /* LaunchScreen.storyboard */,
 				3A676BA12ADEFF3C006138FB /* Info.plist */,
 				3A676B992ADEFF3A006138FB /* RickMorty_2_.xcdatamodeld */,
 			);
 			path = "RickMorty(2)";
+			sourceTree = "<group>";
+		};
+		3A676BA72ADEFF4B006138FB /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				3A676B902ADEFF3A006138FB /* AppDelegate.swift */,
+				3A676B922ADEFF3A006138FB /* SceneDelegate.swift */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		3A676BA82ADEFF59006138FB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3A676B962ADEFF3A006138FB /* Main.storyboard */,
+				3A676B9E2ADEFF3C006138FB /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		3A676BA92ADEFF72006138FB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3A676B942ADEFF3A006138FB /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3A676BAA2ADEFF98006138FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A676BAB2ADEFFAB006138FB /* RickMorty.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +179,7 @@
 				3A676B952ADEFF3A006138FB /* ViewController.swift in Sources */,
 				3A676B9B2ADEFF3A006138FB /* RickMorty_2_.xcdatamodeld in Sources */,
 				3A676B912ADEFF3A006138FB /* AppDelegate.swift in Sources */,
+				3A676BAC2ADEFFAB006138FB /* RickMorty.swift in Sources */,
 				3A676B932ADEFF3A006138FB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +342,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "AntonAkhmedzyanov.RickMorty-2-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -334,6 +373,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "AntonAkhmedzyanov.RickMorty-2-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
